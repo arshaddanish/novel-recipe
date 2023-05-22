@@ -353,16 +353,16 @@ def initial_epoch_from_latest_checkpoint():
 
     return int(latest_checkpoint_num)
 
-def unzip_checkpoint(checkpoint_zip_path):
-    if not os.path.exists(checkpoint_zip_path):
-        print('Cannot find a specified file')
-        return
+# def unzip_checkpoint(checkpoint_zip_path):
+#     if not os.path.exists(checkpoint_zip_path):
+#         print('Cannot find a specified file')
+#         return
 
-    os.makedirs(checkpoint_dir, exist_ok=True)
-    with zipfile.ZipFile(checkpoint_zip_path, 'r') as zip_obj:
-        zip_obj.extractall(checkpoint_dir)
+#     os.makedirs(checkpoint_dir, exist_ok=True)
+#     with zipfile.ZipFile(checkpoint_zip_path, 'r') as zip_obj:
+#         zip_obj.extractall(checkpoint_dir)
 
-    %ls -la ./checkpoints
+#     %ls -la ./checkpoints
     
 # Unzip uploaded checkpoint to checkpoints folder if needed
 # unzip_checkpoint('ckpt_10.zip')
