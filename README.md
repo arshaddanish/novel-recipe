@@ -5,7 +5,7 @@ Trained Model Details:
 - Timesteps: 1500
 - Optimizer: Adam 
 - Loss: 0.2367
-- Accuracy:0.9249
+- Accuracy: 0.9249
 - Learning Rate: 0.0005
 
 ## 2 - Find recipe using tf-idf vectorizer and cosine similarity.
