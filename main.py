@@ -427,7 +427,7 @@ model_1_simplified.load_weights('Model.h5')
 model_1_simplified.build(tf.TensorShape([simplified_batch_size, None]))
 
 model_1_simplified.summary()
-model_1_simplified.save("model_simplified", save_format='h5')
+model_1_simplified.save("Model_simplified.h5", save_format='h5')
 
 
 # num_generate
